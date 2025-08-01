@@ -65,18 +65,6 @@ Tools/Scripts/build-webkit --debug --<platform>-device
 
 where `platform` is `ios`, `tvos` or `watchos`.
 
-#### Using Xcode
-
-You can open `WebKit.xcworkspace` to build and debug WebKit within Xcode.
-Select the "Everything up to WebKit + Tools" scheme to build the entire
-project.
-
-If you don't use a custom build location in Xcode preferences, you have to
-update the workspace settings to use `WebKitBuild` directory.  In menu bar,
-choose File > Workspace Settings, then click the Advanced button, select
-"Custom", "Relative to Workspace", and enter `WebKitBuild` for both Products
-and Intermediates.
-
 ### Building the GTK Port
 
 For production builds:
