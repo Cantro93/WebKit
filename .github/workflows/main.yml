@@ -3,7 +3,7 @@ on:
 jobs:
   debug:
     name: Build Debug
-    runs-on: ubuntu-latest
+    runs-on: arch-latest
     steps:
       - uses: actions/checkout@v4
       - run: cd $GITHUB_WORKSPACE
