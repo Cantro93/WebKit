@@ -1,3 +1,5 @@
+on:
+  push
 jobs:
   debug:
     name: Build Debug
