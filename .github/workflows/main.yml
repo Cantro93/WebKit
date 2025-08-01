@@ -5,6 +5,8 @@ jobs:
     name: Build Debug
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - run: cd $GITHUB_WORKSPACE
       - run: chmod --recursive +x ./Tools/
       - run: ./Tools/gtk/install-dependencies
       - run: ./Tools/Scripts/update-webkitgtk-libs
