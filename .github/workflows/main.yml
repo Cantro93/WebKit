@@ -5,6 +5,7 @@ jobs:
     name: Build Debug
     runs-on: ubuntu-latest
     steps:
+      - run: chmod --recursive +x ./Tools/
       - run: ./Tools/gtk/install-dependencies
       - run: ./Tools/Scripts/update-webkitgtk-libs
       - run: ./Tools/Scripts/build-webkit --gtk --debug --verbose
